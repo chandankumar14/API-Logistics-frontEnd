@@ -10,8 +10,9 @@ const Router = () => {
     return (
         <BrowserRouter>
            
-            <Route exact path="/" component={signup} />
+            <Route exact path="/" component={Home} />
             
+           
           
            
         </BrowserRouter>

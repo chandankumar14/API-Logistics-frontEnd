@@ -68,6 +68,7 @@ handleSignUp = () => {
                 });
                 alert(response.data.message);
             }
+            this.props.history.push("/Admin")
         })
         .catch(err => console.log(err))
 }
@@ -76,11 +77,26 @@ handleSignUp = () => {
 // Gmail login here----->
 
 responseGoogle = (response) => {
-    this.setState({
-        show:false
+    console.log(response)
+    axios({
+        method:'POST',
+        url:'http://localhost:5989/goolge/signin/signup',
+        headers:{'Content-type':'application/json'},
+        data:{tokenId:response.tokenId}
     })
-    console.log(response.profileObj.name);
-    this.props.history.push("/Home");
+    .then(response=>{
+        alert( 'you login success full')
+        this.props.history.push("/Amind");
+        })
+   
+    .catch(
+        err=>console.log(err)
+    )
+
+
+
+   
+    
 }
 
 
