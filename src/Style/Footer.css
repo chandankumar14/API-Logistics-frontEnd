@@ -1,0 +1,74 @@
+
+/* footer csss is start from here---------*/
+#footer1{
+    margin-top: 15px;
+    background-color: green;
+}
+
+#design{
+    font-size: 25px;
+    color: wheat;
+    font-family: 'josefin slab',serif;
+}
+#img{
+    width: 60%!important;
+    height: 140px;
+   border-radius: 10px;
+}
+p{
+    color: wheat;
+    font-size: 20px;
+    align-items: center;
+    padding-left: 20px;
+}
+ a{
+    display: block;
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+}
+#p{
+    color: wheat;
+}
+.company ,.contact{
+    color: wheat;
+    font-size: 25px;
+    font-family: 'josefin slab',serif;
+}
+.mob{
+    color: wheat;
+    font-size: 20px;
+}
+
+.copyright{
+    font-family: 'josefin slab',serif;
+    color: wheat;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+    
+
+    #img {
+        width: 63%;
+        height: 142px;
+        border-radius: 10px;
+    }
+  }
+  
+
+
+  
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    #img {
+        width: 56%;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+  }

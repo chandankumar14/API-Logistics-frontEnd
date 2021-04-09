@@ -1,0 +1,469 @@
+
+
+#heading{
+	text-align:center;
+	font-family: 'Josefin Slab', serif;
+	 background-color:black;
+	 color:wheat;
+	 top:0px;
+}
+
+.Filter{
+    margin-left: 35px;
+    font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+     color: green;
+   margin-top:20px;
+    }
+
+
+#demo{
+    width: 80%;
+    height: 450px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: white;
+    margin-left: 13px;
+    margin-right: 7px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.side-upper-second{
+    margin: 16px;
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: 'Josefin Slab', serif;
+    color:darkred;
+
+}
+#select-location{
+    margin-left: 20px ;
+    width: 160px;
+    height: 35px;
+    border-radius: 3px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+  .cost-for-two,.sort{
+    width: 100%;
+    font-family: Poppins;
+    font-size: 17px;
+    line-height: 1.5;
+    color: darkslateblue;
+    padding: 6px 25px;
+   
+  }
+.cost-two{
+   
+    color: gray;
+    font-size: 17px;
+    font-family:'Times New Roman', Times, serif ;
+}
+  
+ .radio , .sort1{
+    margin: 4px 15px;
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 1.5;
+    color: darkslateblue;
+    word-spacing: 3px;
+ }
+
+ .img{
+    width: 160px;
+    height: 150px;
+    border-radius: 25px;
+    margin-left: 15%;
+    padding-top: 10px;
+ }
+
+
+ .Item{
+    width: 641px !important;
+    height: 240px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: white;
+    margin-left: 13px;
+    margin-right: 7px;
+    margin-top: 40px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+ }
+
+ .scrollbar{
+     width: 850px;
+     height: 600px;
+     overflow: auto;
+ }
+   .rest-name {
+    height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 5px;
+    font-weight: 600;
+    text-align: left;
+    color: #192f60;
+}
+
+.res-location{
+    font-size: 20px;
+    font-family: popins;
+    margin-top: 23px;
+    color: darkblue;
+}
+
+.rest-address {
+    height: 23px;
+    font-family: Poppins;
+    font-size: 18px;
+   padding-top: 15px;
+    margin-top: 3px;
+    text-align: justify;
+    color: #636f88;
+    margin-left: 20px;
+}
+
+
+
+.rests-address {
+    height: 24px;
+    font-family: Poppins;
+    font-size: 16px;
+    text-align: left;
+    color: #636f88;
+    padding-left: 24px;
+}
+
+
+.pagination {
+    display: inline-block;
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .pagination a {
+    color: black;
+   float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+  }
+  
+
+
+
+  
+  .noData{
+    width: 60% !important;
+    height: 250px;
+    padding-top: 50px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    background-color: white;
+    margin-left: 13px;
+    margin-right: 10px;
+    color: darkblue;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 20px;
+ }
+
+@media only screen and (max-device-width:480px ) and (orientation: portrait){
+
+
+
+    #heading{
+        text-align:center;
+        font-family: 'Josefin Slab', serif;
+         background-color:black;
+         color:wheat;
+         top:0px;
+    }
+    
+    .Filter{
+        margin-left: 35px;
+        font-size: 20px;
+         font-family: 'Times New Roman', Times, serif;
+         color: green;
+       margin-top:20px;
+        }
+    
+    
+    #demo{
+        width: 80%;
+        height: 450px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        background-color: white;
+        margin-left: 13px;
+        margin-right: 7px;
+        margin-top: 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .side-upper-second{
+        margin: 16px;
+        padding-top: 10px;
+        font-size: 25px;
+        font-family: 'Josefin Slab', serif;
+        color:darkred;
+    
+    }
+    #select-location{
+        margin-left: 20px ;
+        width: 160px;
+        height: 35px;
+        border-radius: 3px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    
+      .cost-for-two,.sort{
+        width: 100%;
+        font-family: Poppins;
+        font-size: 17px;
+        line-height: 1.5;
+        color: darkslateblue;
+        padding: 6px 25px;
+       
+      }
+    .cost-two{
+       
+        color: gray;
+        font-size: 17px;
+        font-family:'Times New Roman', Times, serif ;
+    }
+      
+     .radio , .sort1{
+        margin: 4px 15px;
+        font-family: Poppins;
+        font-size: 18px;
+        line-height: 1.5;
+        color: darkslateblue;
+        word-spacing: 3px;
+     }
+    
+     .img{
+        width: 160px;
+        height: 150px;
+        border-radius: 25px;
+        margin-left: 15%;
+        padding-top: 10px;
+     }
+    
+    
+     .Item{
+        width: 67% !important;
+        height: 368px;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        background-color: white;
+        margin-left: 13px;
+        margin-right: 10px;
+        margin-top: 40px;
+        border-radius: 20px;
+     }
+
+     .noData{
+        width: 60% !important;
+    height: 250px;
+    padding-top: 50px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    background-color: white;
+    margin-left: 13px;
+    margin-right: 10px;
+    color: darkblue;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+     }
+    
+     .scrollbar{
+         width: 100%;
+         height: 100%;
+         overflow: hidden;
+     }
+       .rest-name {
+        height: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        margin-top: 5px;
+        font-weight: 600;
+        text-align: center;
+        color: #192f60;
+    }
+    
+    .rest-address {
+        height: 23px;
+        font-family: Poppins;
+        font-size: 18px;
+       padding-top: 15px;
+        margin-top: 3px;
+        text-align: justify;
+        color: #636f88;
+        margin-left: 20px;
+    }
+    
+    
+    
+    .rests-address {
+        height: 24px;
+        font-family: Poppins;
+        font-size: 16px;
+        text-align: left;
+        color: #636f88;
+        padding-left: 24px;
+    }
+    
+    
+.res-location{
+    font-size: 20px;
+    font-family: popins;
+    margin-top: 23px;
+    color: darkblue;
+    padding-left: 10px;
+}
+    
+    .pagination {
+        display: inline-block;
+        margin-top: 30px;
+        align-items: center;
+        margin-left: 20px;
+      }
+      .pagination a {
+        color: black;
+       float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+      }
+      
+    
+    
+    
+}
+
+
+
+  
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+    
+    .Item {
+        width: 80% !important;
+        height: 274px;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        background-color: white;
+        margin-left: 13px;
+        margin-right: 10px;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+    #demo {
+        width: 118%;
+        height: 393px;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        background-color: white;
+        margin-left: 13px;
+        margin-right: 7px;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+    .scrollbar {
+        width: 576px;
+        height: 600px;
+        overflow: auto;
+        margin-top: 65px;
+    }
+
+    .rest-name {
+        height: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        margin-top: 5px;
+        font-weight: 600;
+        text-align: center;
+        color: #192f60;
+    }
+    .res-location {
+        font-size: 20px;
+        font-family: popins;
+        margin-top: 23px;
+        color: darkblue;
+        text-align: center;
+    }
+
+
+    .noData{
+     width: 60% !important;
+    height: 250px;
+    padding-top: 50px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    background-color: white;
+    margin-left: 13px;
+    margin-right: 10px;
+    color: darkblue;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+     }
+}
+
+
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    #img {
+        width: 56%;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    
+    .scrollbar {
+        width: 716px;
+        height: 600px;
+        overflow: auto;
+        margin-top: 65px;
+    }
+
+    .Item {
+        width: 60% !important;
+        height: 274px;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        background-color: white;
+        margin-left: 13px;
+        margin-right: 10px;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+
+    
+    .rest-name {
+        height: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        margin-top: 5px;
+        font-weight: 600;
+        text-align: center;
+        color: #192f60;
+    }
+    .res-location {
+        font-size: 20px;
+        font-family: popins;
+        margin-top: 23px;
+        color: darkblue;
+        text-align: center;
+    }
+  }

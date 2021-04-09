@@ -1,0 +1,158 @@
+
+#heading{
+	text-align:center;
+	font-family: 'Josefin Slab', serif;
+	 background-color:black;
+	 color:wheat;
+	 top:0px;
+}
+
+
+
+#top-image{
+    width: 100%;
+    height: 450px;
+}
+
+.logo{
+    position: absolute;
+    top: 91px;
+    left: 576px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    /* padding-top: 10px; */
+    font-size: 29px;
+    border-radius: 50%;
+    color: red;
+}
+.content{
+    position: absolute;
+    top: 150px;
+    left: 390px;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+  
+    line-height: 1.53;
+   
+    text-align: left;
+    color: white;
+}
+
+
+
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+   
+   
+    #heading{
+        text-align: center;
+        font-family: 'Josefin Slab', serif;
+        background-color: black;
+        color: wheat;
+        top: 0px;
+        font-size: 23px;
+    }
+   
+    .logo {
+        position: absolute;
+        top: 97px;
+        left: 162px;
+        width: 78px;
+        height: 50px;
+        background-color: white;
+        text-align: center;
+        padding-top: 4px;
+        font-size: 29px;
+        border-radius: 50%;
+        color: darkorange;
+        font-family: 'Josefin Slab', serif;
+    }
+    .content {
+        position: absolute;
+        top: 168px;
+        left: 15px;
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.53;
+        text-align: justify;
+        color: white;
+        font-family: 'Josefin Slab';
+    }
+
+
+  }
+
+  
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+    
+    .logo {
+        position: absolute;
+        top: 113px;
+        left: 248px;
+        width: 80px;
+        height: 50px;
+        background-color: white;
+        text-align: center;
+        padding-top: 3px;
+        font-size: 29px;
+        border-radius: 50%;
+        color: red;
+        font-family: 'Josefin Slab';
+    }
+
+    .content {
+        position: absolute;
+        top: 202px;
+        left: 33px;
+        font-family: 'Josefin Slab';
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 1.53;
+        text-align: justify;
+        color: white;
+    }
+
+  }
+  
+
+
+  
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    
+    .logo {
+        position: absolute;
+        top: 51px;
+        left: 372px;
+        width: 100px;
+        height: 50px;
+        background-color: white;
+        text-align: center;
+        /* padding-top: 10px; */
+        font-size: 29px;
+        border-radius: 50%;
+        color: red;
+    }
+
+    .content {
+        position: absolute;
+        top: 132px;
+        left: 154px;
+        font-family: Poppins;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.53;
+        text-align: left;
+        color: white;
+    }
+
+
+
+
+  }

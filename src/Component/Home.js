@@ -1,58 +1,21 @@
 import React from 'react';
-import {Button,Modal} from 'react-bootstrap';
-import GoogleLogin from 'react-google-login';
-class Login extends React.Component{
-
-constructor(){
-    super();
-    this.setState({
-        show:false,
-        email:'',
-        password:''
-    })
-}
+import Signup from '../Component/signup';
+import Carousel from '../Component/carousel';
 
 
 
-signUp = () => {
-    this.setState({ show: true });
-}
-//this is used for closed the modal----->
-handleCancelSignUp = () => {
-    this.setState({ show: false });
-}
-
-// this function is used to store the value which is typed in inputfield ---->
-    handleChange = (event, state) => {
-        this.setState({ [state]: event.target.value });
-    }
-
-// here api call for signup is end---------->
-
-// Gmail login here----->
-
-responseGoogle = (response) => {
-    console.log(response)
-}
-
-
-    render(){
-       
-        return(
-            <div>
-<Button>Signup/SignIn</Button>
-
-                <Modal>
-                    <Modal.Header>
-                    <Modal.Title>Signup/SignIn</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body></Modal.Body>
-                    <Modal.Footer></Modal.Footer>
-                </Modal>
- </div>
-
+class Home extends React.Component {
+  
+    render() {
+        // this section are not using ------> i designed only for testing----->
+              return (
+            <React.Fragment>
+                <Signup />        
+                <Carousel  />
+               
+            </React.Fragment>
         )
     }
 }
 
-export default Login
+export default Home;

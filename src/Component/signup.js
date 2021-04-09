@@ -2,6 +2,12 @@ import React from 'react';
 import {Button,Modal} from 'react-bootstrap';
 import axios from 'axios';
 import GoogleLogin from 'react-google-login';
+import '../Style/Home.css'
+import img1 from '../Assest/breakfast.jpg';
+import img2 from '../Assest/dinner.png';
+import img3 from '../Assest/homepageimg.png';
+ 
+
 class Login extends React.Component{
 // declearing constructor here to strore state here------->
     constructor() {
@@ -10,8 +16,7 @@ class Login extends React.Component{
            show: false,
             email: '',
             password: '',
-            firstname: '',
-            lastname: '',
+          
            
         }}
 // declearing function to open modal and close modal
@@ -27,16 +32,9 @@ handleCancelSignUp = () => {
 login = () => {
     this.setState({ show: true });
 }
-
-
-
 handleCancelLogin = () => {
     this.setState({ show: false });
 }
-
-
-
-
 // this function is used to store the value which is typed in inputfield ---->
     handleChange = (event, state) => {
         this.setState({ [state]: event.target.value });
@@ -44,12 +42,11 @@ handleCancelLogin = () => {
 
 // here making api call for Signup---------->
 handleSignUp = () => {
-    const { email, password, firstname, lastname } = this.state;
+    const { email, password} = this.state;
     const signUpObj = {
         email: email,
         password: password,
-        firstname: firstname,
-        lastname: lastname
+       
     };
     axios({
         method: 'POST',
@@ -63,12 +60,10 @@ handleSignUp = () => {
                     show: false,
                     email: '',
                     password: '',
-                    firstname: '',
-                    lastname: ''
-                });
-                alert(response.data.message);
+                   });
+               
             }
-            this.props.history.push("/Admin")
+            this.props.history.push("/contetpage");
         })
         .catch(err => console.log(err))
 }
@@ -86,28 +81,70 @@ responseGoogle = (response) => {
     })
     .then(response=>{
         alert( 'you login success full')
-        this.props.history.push("/Amind");
+        this.props.history.push("/contetpage");
         })
    
     .catch(
         err=>console.log(err)
-    )
-
-
-
-   
-    
+    )   
 }
 
 
 
 
     render(){
-        const {  email, password, firstname, lastname,show } = this.state;
+        const {  email, password, } = this.state;
         return(
             <div>
-                <Button onClick={()=>this.signUp()} > signup here</Button>
-               
+
+
+
+
+                <div className ="header">
+                <Button onClick={()=>this.signUp()}  className= "btn-x"> signup/signIn</Button>
+               </div>
+
+
+
+
+               <h3 style= {{backgroundColor:'rosybrown',
+     margin:'10px',textAlign:'center',
+     fontFamily:' Times New Roman, Times, serif'}}>welcome to Online Food-Ordering </h3>
+
+
+
+
+
+     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src={img1} alt="First slide" style ={{width:'100%',height:'400px'}} />
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src={img2} alt="Second slide" style={{width:'100%', height:'400px'}} />
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src={img3} alt="Third slide"  style={{width:'100%', height:'400px'}}/>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
 
     <Modal show={this.state.show}>
     <Modal.Header>
@@ -116,7 +153,7 @@ responseGoogle = (response) => {
                    
  <Modal.Body>
     <div>
-      <h2>  Signup User</h2>
+      <h4>  Signup / signIn</h4>
      </div>
 
      <form>
@@ -126,32 +163,22 @@ responseGoogle = (response) => {
     value={email} onChange={(event) => this.handleChange(event, 'email')}/>
   </div>
   <div class="form-group">
-    <label for="exampleInputEmail1">Enter Firstname</label>
-    <input type="text" class="form-control" placeholder="Enter FirstName"
-    value={firstname} onChange={(event) => this.handleChange(event, 'firstname')}/>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">EnterLastName</label>
-    <input type="text" class="form-control" placeholder="Enter lastName"
-    value={lastname} onChange={(event) => this.handleChange(event, 'lastname')}/>
-  </div>
-  <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" placeholder="Password"
     value={password} onChange={(event) => this.handleChange(event, 'password')}/>
   </div>
-  
 </form>
-</Modal.Body>
 
 
-<Modal.Footer>
-<div>
-<button onClick={()=>this.handleSignUp()} class="btn btn-sm btn-success">signup</button>
-<button class="btn btn-sm btn-danger" onClick={()=>this.handleCancelSignUp()}>Cancel</button>
+
+<div >
+<button onClick={()=>this.handleSignUp()} className="signup">signup</button>
+<button className="cancel" onClick={()=>this.handleCancelSignUp()}>Cancel</button>
 </div>
-<hr></hr>
-<h3>OR</h3>
+
+</Modal.Body>
+<Modal.Footer>
+
 <div>
 <GoogleLogin
      clientId="745717577080-5uo0jrq7g23qqioe155h28u94a0co1cj.apps.googleusercontent.com"
