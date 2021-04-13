@@ -50,12 +50,12 @@ handleSignUp = () => {
     };
     axios({
         method: 'POST',
-        url: 'http://localhost:5989/signup',
+        url: 'http://localhost:5989/login',
         headers: { 'Content-Type': 'application/json' },
         data: signUpObj
     })
         .then(response => {
-            if (response.data.message == 'User SignedUp Sucessfully') {
+            if (response.data.message == 'User LoggedIn Sucessfully') {
                 this.setState({
                     show: false,
                     email: '',
@@ -63,6 +63,15 @@ handleSignUp = () => {
                    });
                
             }
+            if (response.data.message == 'user signedup successfully') {
+                this.setState({
+                    show: false,
+                    email: '',
+                    password: '',
+                   });
+               
+            }
+alert(response.data.message);
             this.props.history.push("/contetpage");
         })
         .catch(err => console.log(err))
