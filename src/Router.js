@@ -4,6 +4,8 @@ import Signup from './Component/signup';
 import Footer from './Component/Footer';
 import Filter from './Component/Filter';
 import Content from './Component/Content';
+import Login from './Component/LoginPage'
+import Dashboard from './Component/Dashboard'
 
 
 
@@ -11,8 +13,8 @@ const Router = () => {
     return (
         <BrowserRouter>
            
-            <Route exact path="/" component={Signup} />
-            <Route exact path="/contetpage" component={Content} />
+            <Route exact path="/" component={Login} />
+            <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/restaurantsearchpage" component={Filter} />
            
           <Footer />
