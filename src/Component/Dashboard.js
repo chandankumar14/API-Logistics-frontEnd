@@ -109,6 +109,13 @@ alert(response.data.message);
 }
 // here api call for signup is end---------->
 
+handleClick = (id) => {
+ 
+  const coustomer_id = id;
+  this.props.history.push(`/detailspage/?coustomer_id=${coustomer_id}`);
+}
+
+
 
     render(){
         const {  email,  Coustomer_name,Company_name,Contact_number,Pin_code,stage,Record } = this.state;
@@ -138,7 +145,8 @@ alert(response.data.message);
   {Record.map(item=>{return(
           <tr>
             
-             <td> {item.Coustomer_name}</td>
+          <a  onClick={() => this.handleClick(item.id)}> 
+          <td> {item.Coustomer_name }</td></a>
             <td>{item.Company_name}</td>
             <td>{item.Contact_number}</td>
             <td>{item.Pin_code}</td>

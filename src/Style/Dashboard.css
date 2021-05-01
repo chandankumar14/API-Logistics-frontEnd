@@ -3,8 +3,7 @@
 
 .sidebar,.content-area{
     display: inline-block;
-    height: 500px;
-    overflow-y: auto;
+    height: 100vh;
     vertical-align: top;
     font-family: 'Josefin Slab', serif;
 }
@@ -17,6 +16,7 @@
 }
 .content-area{
     width: 82%;
+   
 }
 
 
@@ -31,4 +31,11 @@
 .sidebar a:hover{
     color: aquamarine;
     opacity: 0.7;
+}
+
+.Details{
+    padding: 30px;
+    font-family:'Josefin Slab', serif ;
+    margin-bottom: 20px;
+
 }

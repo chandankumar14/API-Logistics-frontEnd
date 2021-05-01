@@ -4,8 +4,10 @@ import Signup from './Component/signup';
 import Footer from './Component/Footer';
 import Filter from './Component/Filter';
 import Content from './Component/Content';
-import Login from './Component/LoginPage'
-import Dashboard from './Component/Dashboard'
+import Login from './Component/LoginPage';
+import Dashboard from './Component/Dashboard';
+import details from './Component/Details';
+
 
 
 
@@ -15,7 +17,7 @@ const Router = () => {
            
             <Route exact path="/" component={Login} />
             <Route exact path="/dashboard" component={Dashboard} />
-            <Route exact path="/restaurantsearchpage" component={Filter} />
+            <Route exact path="/detailspage" component={details} />
            
           <Footer />
            
